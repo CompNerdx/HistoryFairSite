@@ -12,4 +12,13 @@
     position: absolute;
     width: 100%;
   }
+
+  #navside{
+    position: fixed;
+    background-color: rgb(189, 189, 189);
+  }
+
+  #navcolumnfiller{
+    background-color: rgb(189, 189, 189);
+  }
 }
