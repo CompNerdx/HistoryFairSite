@@ -184,7 +184,14 @@
          x.className = "show";
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       }
-      window.onload = timedark;
+      function patch() {
+         var element = document.getElementById("area");
+         element.classList.toggle("dark-mode");
+         var element = document.getElementById("sidebar");
+         element.classList.toggle("dark-sidebar");
+
+      }
+      window.onload = patch;
       </script>
   </body>
 </html>
