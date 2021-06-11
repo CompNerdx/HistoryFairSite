@@ -1,24 +1,7 @@
-@media only screen and (min-width: 1025px) {
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-  
-  #footer {
-    position: absolute;
-    width: 100%;
-  }
-
   #navside{
     position: fixed;
     background-color: rgb(189, 189, 189);
   }
-
   #navcolumnfiller{
     background-color: rgb(189, 189, 189);
   }
-}
