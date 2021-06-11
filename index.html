@@ -26,8 +26,8 @@
         </button>
         <div class="collape navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-              <li class="nav-item"><a class="nav-link active" href="/timeline.html">Timeline</a></li>
+              <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/timeline.html">Timeline</a></li>
           </ul>
           <i onclick="dark()" class="fas spin fa-adjust"></i>
         </div>
@@ -96,35 +96,41 @@
       </div>
       <hr id="who">
       <div class="row">
+        <div class="col-md-5">
+          <div class="p-5">
+            <img src="https://gdb.voanews.com/AC0E5CC9-1FEC-4C25-8F26-495BC14B0245_w640_r1_s_cx0_cy31_cw69.jpg" class="img-fluid border shadow" alt="Photo of Tim Berners-Lee">
+            <!-- I can't get the image to work with the file so I'm just gonna use the link -->
+            <p class="p-1">Picture of Tim Berners-Lee</p>
+          </div>
+        </div>
         <div class="col-md-7">
           <div class="p-5">
             <div class="container">
-              <h2>Why was the internet invented?</h2>
+              <h2>Who invented the Internet?</h2>
             </div>
             <div class="container">
               <p>
-                When Sputnik was launched, America went into a bit of a panic. They realized that the USSR had readily
-                advancing technology, and phone lines would be pretty bad for a communication system because they could be
-                easily cut. They decided that they needed something that would distribute the information and rerout it in
-                case of a breakage, so packet switching was created.
+                There is no single person that created the internet by themselves. There were many people that helped in the
+                creation of the internet that contributed many different things. For example, one of the key inventions that 
+                formed the internet was packet switching.
               </p>
               <p>
-                In addition to this, there weren't many high power computers at the time, and people that needed to use them
-                were far away from them. They realized that by linking computers together, people with low power terminals 
-                could access high power machines from across the country.
+                Packet switching was first theorized by Paul Baran and Donald Davies in the early 60's, and later Leonard Kleinrock
+                did further research on it. He went on to implement the first packet switching network, the ARPAnet, in the 
+                late 60s. This formed the basis of the internet.
               </p>
               <p>
-                This is the basis of which the ARPAnet was built on,
-                which was one of the first computer networks, and was ultimately vital in the creation of the internet we
-                know today.
+                Another important innovation was the TCP/IP protocol, developed by Robert Khan and Vinton Cerf, which set 
+                standards for networks communitcating with other networks, which was huge in the development of the internet 
+                and is a very important piece of the Internet today.
+              </p>
+              <p>
+                Possibly the most well known of all the innovations and people that made the internet what it is today is 
+                the World Wide Web and the HTTP protocol, invented by Tim Berners-Lee. This is a hypertext protocol that allows
+                hypertext to be displayed over the internet in websites, and is probably the most widely used piece of the 
+                modern internet.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="p-5">
-            <img src="images/arpanet-1974.png" class="img-fluid border shadow" alt="Image of the ArpaNet in 1974">
-            <p class="p-1">The ArpaNet in 1974</p>
           </div>
         </div>
       </div>
@@ -182,7 +188,7 @@
       function dark() {
          var element = document.body;
          element.classList.toggle("dark-mode");
-      }
+      //I had to deactivate this cause it's broken
       </script>
   </body>
 </html>
