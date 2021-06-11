@@ -36,14 +36,14 @@
                 <div class="pt-1 mx-auto"><h4>Timeline Navigation</h4></div>
                 <hr>
                 <ol class="list-group list-group-numbered">
-                  <button onclick="activeTimelineEntry = 4" class="list-group-item">1. Sputnik scare occured </button>
-                  <button onclick="activeTimelineEntry = 1" class="list-group-item">2. Packet Switching invented</button>
-                  <button onclick="activeTimelineEntry = 7" class="list-group-item">3. ARPAnet is formed</button>
-                  <button onclick="activeTimelineEntry = 2" class="list-group-item">4. ARPAnet's first message was sent</button>
-                  <button onclick="activeTimelineEntry = 3" class="list-group-item">5. TCP has been invented</button>
-                  <button onclick="activeTimelineEntry = 4" class="list-group-item">6. Email has been invented</button>
-                  <button onclick="activeTimelineEntry = 5" class="list-group-item">7. NSFnet was created from ARPAnet</button>
-                  <button onclick="activeTimelineEntry = 6" class="list-group-item">8. WWW has been invented</button>
+                  <a href="#1" onclick="activeTimelineEntry = 1" class="list-group-item">1. Sputnik scare occured </a>
+                  <a href="#2" onclick="activeTimelineEntry = 2" class="list-group-item">2. Packet Switching invented</a>
+                  <a href="#3" onclick="activeTimelineEntry = 3" class="list-group-item">3. ARPAnet is formed</a>
+                  <a href="#4" onclick="activeTimelineEntry = 4" class="list-group-item">4. ARPAnet's first message was sent</a>
+                  <a href="#5" onclick="activeTimelineEntry = 5" class="list-group-item">5. TCP has been invented</a>
+                  <a href="#6" onclick="activeTimelineEntry = 6" class="list-group-item">6. Email has been invented</a>
+                  <a href="#7" onclick="activeTimelineEntry = 7" class="list-group-item">7. NSFnet was created from ARPAnet</a>
+                  <a href="#8" onclick="activeTimelineEntry = 8" class="list-group-item">8. WWW has been invented</a>
                 </ol>
               </div>
             </div>
@@ -53,37 +53,47 @@
           <div class="container">
             <div class="p-3">
               <h1>Timeline</h1>
-              <h2>Sputnik scare occured</h2>
-            <p>In the early 1950s the US was the dominant world power. The U-2 spy plane gave them the knowledge that they had the advantage in nuclear capability.
-            However when the Sputnik 1 launched the media went into panic. The New York Times stated that the launch was a major triump for Russian Communism.
-            </p>
-            <img src="images/sputnick.jpg" class="img-fluid border shadow w-25 h-50">
-          <h2>Invention of packet switching</h2> 
-          <p>Packet switching is a method of sending data over the digital network through packets. Each packet has a header and a payload.
-            The data held in the header directs where the packet goes to reach the destination. In the early 1960s Paul Baran created the concept of this to be fault tolerant and efficent.
-          </p>
-          <img src="images/packetswitchingdemonstration.gif" class="img-fluid border shadow w-50 h-50">
-          <h2>ARPAnet is formed</h2>
-          <p>ARPAnet or Advanced research projects agency network is a part of the U.S defense department.
-            Its goal was to link computers in Pentagon funded institutions with telephone lines. The cold war made military commanders seek out a communication system with no central core.
-            To be resisitant against enemy attacks at one point.
-          </p>
-          <img src="images/ARPAnetmap.jpg" class="img-fluid border shadow w-40 h-50">
-          <h2>ARPAnet's first message was sent.</h2>
-          <p>In October 1969 the first message on ARPAnet was sent. The message content was “LO” the message was originally intended to be “LOGIN”, but the system crashed and was only able to show those two letters.</p>
-          <img src="images/arpanetfirst.png" class="img-fluid border shadow w-50 h-50">  
-          <h2>invention of TCP</h2>
-          <p>The name comes from Electronic mail as the “mail” is sent electronically. Ray Tomlinson was credited as the creator of the email system. It was originally designed to send information across the ARPAnet. The email system has changed very slightly from back then to today.</p>
-          <img src="images/tcp.png" class="img-fluid border shadow w-50 h-50">  
-          <h2>NSFnet was created from ARPAnet</h2>
-          <p>The NSFNET was established in 1985. Its purpose was to develop the backbone for the internet. The NSF limited the internet to government agencies and universities until 1989 where the first public ISP was released.
-          </p>
-          <img src="images/nsfnetmap.png" class="img-fluid border shadow w-50 h-50">  
-          <h2>The World wide web was invented.`</h2>
-          <p>Timothy Berners-lee created the World wide web, which is an information system where web resources are identified by URLS that can be hyperlinked. He created the first web browser in 1990. 
-          </p>
-          <img src="images/www.webp" class="img-fluid border shadow w-50 h-50">  
-        </div>
+              <div id="1">
+                <h2>Sputnik scare occured</h2>
+                <p>
+                  In the early 1950s the US was the dominant world power. The U-2 spy plane gave them the knowledge that they had the advantage in nuclear capability.
+                  However when the Sputnik 1 launched the media went into panic. The New York Times stated that the launch was a major triump for Russian Communism.
+                </p>
+                <img src="images/sputnick.jpg" class="img-fluid border shadow w-25 h-50">
+              </div>
+              <h2>Invention of packet switching</h2> 
+              <p>
+                Packet switching is a method of sending data over the digital network through packets. Each packet has a header and a payload.
+                The data held in the header directs where the packet goes to reach the destination. In the early 1960s Paul Baran created the concept of this to be fault tolerant and efficent.
+              </p>
+              <img src="images/packetswitchingdemonstration.gif" class="img-fluid border shadow w-50 h-50">
+              <h2>ARPAnet is formed</h2>
+              <p>ARPAnet or Advanced research projects agency network is a part of the U.S defense department.
+                Its goal was to link computers in Pentagon funded institutions with telephone lines. The cold war made military commanders seek out a communication system with no central core.
+                To be resisitant against enemy attacks at one point.
+              </p>
+              <img src="images/ARPAnetmap.jpg" class="img-fluid border shadow w-40 h-50">
+              <h2>ARPAnet's first message was sent.</h2>
+              <p>
+                In October 1969 the first message on ARPAnet was sent. The message content was “LO” the message was originally intended to be “LOGIN”, but the system crashed and was only able to show those two letters.
+              </p>
+              <img src="images/arpanetfirst.png" class="img-fluid border shadow w-50 h-50">  
+              <h2>invention of TCP</h2>
+              <p>
+                The name comes from Electronic mail as the “mail” is sent electronically. Ray Tomlinson was credited as the creator of the email system. It was originally designed to send information across the ARPAnet. The email system has changed very slightly from back then to today.
+              </p>
+              <img src="images/tcp.png" class="img-fluid border shadow w-50 h-50">  
+              <h2>NSFnet was created from ARPAnet</h2>
+              <p>
+                The NSFNET was established in 1985. Its purpose was to develop the backbone for the internet. The NSF limited the internet to government agencies and universities until 1989 where the first public ISP was released.
+              </p>
+              <img src="images/nsfnetmap.png" class="img-fluid border shadow w-50 h-50">  
+              <h2>The World wide web was invented.`</h2>
+              <p>
+                Timothy Berners-lee created the World wide web, which is an information system where web resources are identified by URLS that can be hyperlinked. He created the first web browser in 1990. 
+              </p>
+              <img src="images/www.webp" class="img-fluid border shadow w-50 h-50">  
+            </div>
           </div>
         </div>
       </div>
