@@ -29,6 +29,7 @@
               <li class="nav-item"><a class="nav-link active" href="/timeline.html">Timeline</a></li>
           </ul>
           <i onclick="timedark()" class="fas spin fa-adjust"></i>
+          <div id="snackbar">Toggled!</div>
         </div>
       </div>
     </nav>
@@ -179,6 +180,9 @@
          element.classList.toggle("dark-mode");
          var element = document.getElementById("sidebar");
          element.classList.toggle("dark-sidebar");
+         var x = document.getElementById("snackbar");
+         x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       }
       window.onload = timedark;
       </script>
