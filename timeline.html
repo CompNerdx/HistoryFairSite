@@ -8,9 +8,8 @@
     <meta property="og:image" content="https://historyoftheinternet.cf/images/favicon.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
     <title>Timeline - Internet History</title>
-    <script src="main.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
@@ -39,14 +38,14 @@
                 <div class="pt-1 mx-auto"><h4>Timeline Navigation</h4></div>
                 <hr>
                 <ol class="list-group list-group-numbered">
-                  <a href="#1" onclick="activeTimelineEntry = 1" class="list-group-item">1. Sputnik scare occured </a>
-                  <a href="#2" onclick="activeTimelineEntry = 2" class="list-group-item">2. Packet Switching invented</a>
-                  <a href="#3" onclick="activeTimelineEntry = 3" class="list-group-item">3. ARPAnet is formed</a>
-                  <a href="#4" onclick="activeTimelineEntry = 4" class="list-group-item">4. ARPAnet's first message was sent</a>
-                  <a href="#5" onclick="activeTimelineEntry = 5" class="list-group-item">5. TCP has been invented</a>
-                  <a href="#6" onclick="activeTimelineEntry = 6" class="list-group-item">6. Email has been invented</a>
-                  <a href="#7" onclick="activeTimelineEntry = 7" class="list-group-item">7. NSFnet was created from ARPAnet</a>
-                  <a href="#8" onclick="activeTimelineEntry = 8" class="list-group-item">8. WWW has been invented</a>
+                  <a href="#1" id="a" onclick="timelinechangeactive(a);" class="list-group-item">1. Sputnik scare occured </a>
+                  <a href="#2" id="b" onclick="timelinechangeactive(b);" class="list-group-item">2. Packet Switching invented</a>
+                  <a href="#3" id="c" onclick="timelinechangeactive(c);" class="list-group-item">3. ARPAnet is formed</a>
+                  <a href="#4" id="d" onclick="timelinechangeactive(d);" class="list-group-item">4. ARPAnet's first message was sent</a>
+                  <a href="#5" id="e" onclick="timelinechangeactive(e);" class="list-group-item">5. TCP has been invented</a>
+                  <a href="#6" id="f" onclick="timelinechangeactive(f);" class="list-group-item">6. Email has been invented</a>
+                  <a href="#7" id="g" onclick="timelinechangeactive(g);" class="list-group-item">7. NSFnet was created from ARPAnet</a>
+                  <a href="#8" id="h" onclick="timelinechangeactive(h);" class="list-group-item">8. WWW has been invented</a>
                 </ol>
               </div>
             </div>
@@ -127,6 +126,6 @@
     </footer>
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    
+    <script src="main.js"></script>
   </body>
 </html>
